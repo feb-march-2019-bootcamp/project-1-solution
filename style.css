@@ -1,0 +1,151 @@
+* {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body {
+background-color: whitesmoke;
+}
+
+form#survey-form {
+background-color: #fff;
+border-color: lightgray;
+border-style: solid;
+border-width: .1rem;
+border-radius: .3rem;
+padding: 0 1rem;
+}
+
+.material-input {
+padding: 0 1rem;
+padding-bottom: 1rem;
+}
+
+.material-input input, .material-input label {
+display: block;
+}
+
+.material-input input {
+font-size: 1.2rem;
+border-radius: .2rem;
+border-width: .1rem;
+border-color: grey;
+border-style: solid;
+outline: none;
+padding: .5rem;
+}
+
+.material-input input:focus, .material-input input:active {
+border-color: #1a73e8;
+}
+
+.material-input input::placeholder {
+visibility: hidden;
+}
+
+.material-input label {
+margin-top: -2rem;
+margin-left: .6rem;
+background-color: white;
+width: fit-content;
+padding: 0 .3rem;
+color: grey;
+margin-bottom: 2rem;
+
+transition-property: margin-top, margin-left, margin-bottom;
+transition-duration: .3s;
+}
+
+.material-input input:not(:placeholder-shown) + label,
+.material-input input:focus + label,
+.material-input input:active + label {
+margin-top: -3.2rem;
+margin-left: .4rem;
+margin-bottom: 3.2rem;
+
+transition-property: margin-top, margin-left, margin-bottom;
+transition-duration: .3s;
+}
+
+.material-input input:focus + label, .material-input input:active + label {
+color: #1a73e8;
+}
+
+.material-input label span {
+transition-property: font-size;
+transition-duration: .3s;
+}
+
+.material-input input:not(:placeholder-shown) + label span,
+.material-input input:focus + label span,
+.material-input input:active + label span {
+    font-size: .8rem;
+    transition-property: font-size;
+    transition-duration: .3s;
+}
+
+
+.text-center, .text-center > * {
+display: flex;
+margin-left: auto;
+margin-right: auto;
+}
+
+.material-btn {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+    border-style: solid;
+    border-radius: .15rem;
+    margin: .5rem 0;
+    color: #fff;
+    outline: none;
+    padding: .5rem 1rem;
+    box-shadow: grey .01rem .01rem .5rem;
+    transition-property: background-color, box-shadow, border-color;
+    transition-duration: .3s;
+}
+
+.material-btn:active, .material-btn:focus, .material-btn:hover {
+    background-color: #1d68cc;
+    border-color: #1d68cc;
+    box-shadow: grey .01rem .01rem .3rem;
+    transition-property: background-color, box-shadow, border-color;
+    transition-duration: .3s;
+}
+
+
+.material-select {
+    display: block;
+}
+.material-select select, .material-select label {
+display: block;
+}
+
+.material-select select {
+    height: 2rem;
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.rainbow-colors {
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rainbow {
+    5% {
+        transform: rotate(0deg);
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(360deg);
+        background-color: green;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+}

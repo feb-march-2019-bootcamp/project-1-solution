@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="file.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    Hello World
+    <h1 id="title" class="text-center">
+        <span>
+            Survey Form
+        </span>
+    </h1>
+
+    <form id="survey-form">
+        <p id="description" class="text-center">
+            <span>Let us know how we can improve freeCodeCamp</span>
+        </p>
+
+        <div class="text-center">
+            <div>
+                <div class="material-input">
+                    <input type="text" placeholder="Name" required name="name" id="name">
+                    <label for="name">
+                        <span>
+                            Name
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <div>
+                <div class="material-input">
+                    <input type="email" required placeholder="Name" name="email" id="email">
+                    <label for="name">
+                        <span>
+                            Email
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <div class="material-select">
+                <label for="role">Which option best describes your current role?</label>
+
+                <select name="role" id="role">
+                    <option value="" disabled>Select an option</option>
+                    <option value="1">Student</option>
+                    <option value="2">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <div>
+                <button class="material-btn rainbow-colors" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
 </body>
+
 </html>
